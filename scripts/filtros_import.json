@@ -1,0 +1,1286 @@
+[
+  {
+    "id_insumo": "F-C-20325-2",
+    "codigo": "C 20325/2",
+    "nome": "MAN C 20325/2",
+    "custo": 73.65
+  },
+  {
+    "id_insumo": "F-AP-9834",
+    "codigo": "AP 9834",
+    "nome": "TEC-FIL AP 9834",
+    "custo": 84.06
+  },
+  {
+    "id_insumo": "F-C-21493",
+    "codigo": "C 21493",
+    "nome": "MAN C 21493",
+    "custo": 123.25
+  },
+  {
+    "id_insumo": "F-BFU-707",
+    "codigo": "BFU 707",
+    "nome": "MAN BFU 707",
+    "custo": 11.9
+  },
+  {
+    "id_insumo": "F-WK-9052X-P-553201",
+    "codigo": "WK 9052X - P 553201",
+    "nome": "TEC-FIL WK 9052X - P 553201",
+    "custo": 95.0
+  },
+  {
+    "id_insumo": "F-BFU-811",
+    "codigo": "BFU 811",
+    "nome": "MAN BFU 811",
+    "custo": 21.5
+  },
+  {
+    "id_insumo": "F-PSC-403",
+    "codigo": "PSC 403",
+    "nome": "TEC-FIL PSC 403",
+    "custo": 53.92
+  },
+  {
+    "id_insumo": "F-P-550881",
+    "codigo": "P 550881",
+    "nome": "DONALDSON P 550881",
+    "custo": 86.68
+  },
+  {
+    "id_insumo": "F-P-553004",
+    "codigo": "P 553004",
+    "nome": "DONALDSON P 553004",
+    "custo": 15.0
+  },
+  {
+    "id_insumo": "F-PC-2-155",
+    "codigo": "PC 2/155",
+    "nome": "TEC-FIL PC 2/155",
+    "custo": 8.66
+  },
+  {
+    "id_insumo": "F-P-945X",
+    "codigo": "P 945X",
+    "nome": "MAN P 945X",
+    "custo": 14.5
+  },
+  {
+    "id_insumo": "F-PC-2-255",
+    "codigo": "PC 2/255",
+    "nome": "TEC-FIL PC 2/255",
+    "custo": 15.33
+  },
+  {
+    "id_insumo": "F-WK-950-13-OU-14-DESC",
+    "codigo": "WK 950/13 OU 14 DESC",
+    "nome": "MAN WK 950/13 OU 14 DESC",
+    "custo": 51.51
+  },
+  {
+    "id_insumo": "F-PSC-744",
+    "codigo": "PSC 744",
+    "nome": "TEC-FIL PSC 744",
+    "custo": 52.17
+  },
+  {
+    "id_insumo": "F-PEC-3154",
+    "codigo": "PEC 3154",
+    "nome": "TEC-FIL PEC 3154",
+    "custo": 81.92
+  },
+  {
+    "id_insumo": "F-PC-505",
+    "codigo": "PC 505",
+    "nome": "TEC-FIL PC 505",
+    "custo": 12.33
+  },
+  {
+    "id_insumo": "F-PU-1046X",
+    "codigo": "PU 1046X",
+    "nome": "MAN PU 1046X",
+    "custo": 51.23
+  },
+  {
+    "id_insumo": "F-PEC-3022",
+    "codigo": "PEC 3022",
+    "nome": "TEC-FIL PEC 3022",
+    "custo": 30.61
+  },
+  {
+    "id_insumo": "F-PU-999-1X",
+    "codigo": "PU 999/1X",
+    "nome": "MAN PU 999/1X",
+    "custo": 73.34
+  },
+  {
+    "id_insumo": "F-PEC-3021",
+    "codigo": "PEC 3021",
+    "nome": "TEC-FIL PEC 3021",
+    "custo": 57.0
+  },
+  {
+    "id_insumo": "F-837091128",
+    "codigo": "837091128",
+    "nome": "AGCO KIT 2 837091128",
+    "custo": 515.46
+  },
+  {
+    "id_insumo": "F-X-220184",
+    "codigo": "X 220184",
+    "nome": "DONALDSON KIT X 220184",
+    "custo": 479.13
+  },
+  {
+    "id_insumo": "F-X-220185",
+    "codigo": "X 220185",
+    "nome": "DONALDSON KIT X 220185",
+    "custo": 825.99
+  },
+  {
+    "id_insumo": "F-WK-962-7",
+    "codigo": "WK 962/7",
+    "nome": "MAN WK 962/7",
+    "custo": 70.0
+  },
+  {
+    "id_insumo": "F-PSC-79",
+    "codigo": "PSC 79",
+    "nome": "TEC-FIL PSC 79",
+    "custo": 52.0
+  },
+  {
+    "id_insumo": "F-PSC-927",
+    "codigo": "PSC 927",
+    "nome": "TEC-FIL PSC 927",
+    "custo": 71.24
+  },
+  {
+    "id_insumo": "F-84526251",
+    "codigo": "84526251",
+    "nome": "CNH 84526251",
+    "custo": 83.0
+  },
+  {
+    "id_insumo": "F-PSC-743",
+    "codigo": "PSC 743",
+    "nome": "TEC-FIL PSC 743",
+    "custo": 56.32
+  },
+  {
+    "id_insumo": "F-C-20457",
+    "codigo": "C 20457",
+    "nome": "MAN C 20457",
+    "custo": 90.64
+  },
+  {
+    "id_insumo": "F-PSC-661",
+    "codigo": "PSC 661",
+    "nome": "TEC-FIL PSC 661",
+    "custo": 83.76
+  },
+  {
+    "id_insumo": "F-PSL-856",
+    "codigo": "PSL 856",
+    "nome": "TEC-FIL PSL 856",
+    "custo": 70.11
+  },
+  {
+    "id_insumo": "F-P-551100",
+    "codigo": "P 551100",
+    "nome": "DONALDSON P 551100",
+    "custo": 85.0
+  },
+  {
+    "id_insumo": "F-PSH-693",
+    "codigo": "PSH 693",
+    "nome": "TEC-FIL PSH 693",
+    "custo": 129.59
+  },
+  {
+    "id_insumo": "F-P-781039",
+    "codigo": "P 781039",
+    "nome": "DONALDSON P 781039",
+    "custo": 139.87
+  },
+  {
+    "id_insumo": "F-ASR-492",
+    "codigo": "ASR 492",
+    "nome": "TEC-FIL ASR 492",
+    "custo": 86.46
+  },
+  {
+    "id_insumo": "F-ACP-845",
+    "codigo": "ACP 845",
+    "nome": "TEC-FIL ACP 845",
+    "custo": 68.48
+  },
+  {
+    "id_insumo": "F-P-550909",
+    "codigo": "P 550909",
+    "nome": "DONALDSON P 550909",
+    "custo": 75.0
+  },
+  {
+    "id_insumo": "F-P-551551",
+    "codigo": "P 551551",
+    "nome": "DONALDSON P 551551",
+    "custo": 159.0
+  },
+  {
+    "id_insumo": "F-PSL-837",
+    "codigo": "PSL 837",
+    "nome": "TEC-FIL PSL 837",
+    "custo": 152.08
+  },
+  {
+    "id_insumo": "F-V-837079728",
+    "codigo": "V 837079728",
+    "nome": "AGCO V 837079728",
+    "custo": 83.0
+  },
+  {
+    "id_insumo": "F-HU-931-5X",
+    "codigo": "HU 931/5X",
+    "nome": "MAN HU 931/5X",
+    "custo": 26.79
+  },
+  {
+    "id_insumo": "F-PEL-2003",
+    "codigo": "PEL 2003",
+    "nome": "TEC-FIL PEL 2003",
+    "custo": 19.53
+  },
+  {
+    "id_insumo": "F-PSL-171",
+    "codigo": "PSL 171",
+    "nome": "TEC-FIL PSL 171",
+    "custo": 25.19
+  },
+  {
+    "id_insumo": "F-PSL-900",
+    "codigo": "PSL 900",
+    "nome": "TEC-FIL PSL 900",
+    "custo": 25.46
+  },
+  {
+    "id_insumo": "F-PSL-836",
+    "codigo": "PSL 836",
+    "nome": "TEC-FIL PSL 836",
+    "custo": 47.68
+  },
+  {
+    "id_insumo": "F-PSL-301",
+    "codigo": "PSL 301",
+    "nome": "TEC-FIL PSL 301",
+    "custo": 37.42
+  },
+  {
+    "id_insumo": "F-HU-945-2X",
+    "codigo": "HU 945/2X",
+    "nome": "MAN HU 945/2X",
+    "custo": 35.0
+  },
+  {
+    "id_insumo": "F-PEL-2002",
+    "codigo": "PEL 2002",
+    "nome": "TEC-FIL PEL 2002",
+    "custo": 21.28
+  },
+  {
+    "id_insumo": "F-A4601800009",
+    "codigo": "A4601800009",
+    "nome": "ORIGINAL A4601800009",
+    "custo": 124.4
+  },
+  {
+    "id_insumo": "F-PEL-2004",
+    "codigo": "PEL 2004",
+    "nome": "TEC-FIL PEL 2004",
+    "custo": 55.92
+  },
+  {
+    "id_insumo": "F-PL-447",
+    "codigo": "PL 447",
+    "nome": "TEC-FIL PL 447",
+    "custo": 45.0
+  },
+  {
+    "id_insumo": "F-W-962",
+    "codigo": "W 962",
+    "nome": "MAN W 962",
+    "custo": 68.02
+  },
+  {
+    "id_insumo": "F-W-1170",
+    "codigo": "W 1170",
+    "nome": "MAN W 1170",
+    "custo": 60.93
+  },
+  {
+    "id_insumo": "F-PSL-339",
+    "codigo": "PSL 339",
+    "nome": "TEC-FIL PSL 339",
+    "custo": 46.5
+  },
+  {
+    "id_insumo": "F-PSC-82",
+    "codigo": "PSC 82",
+    "nome": "TEC-FIL PSC 82",
+    "custo": 43.36
+  },
+  {
+    "id_insumo": "F-WK-940-10",
+    "codigo": "WK 940/10",
+    "nome": "MAN WK 940/10",
+    "custo": 66.02
+  },
+  {
+    "id_insumo": "F-PSD-940",
+    "codigo": "PSD 940",
+    "nome": "TEC-FIL PSD 940",
+    "custo": 180.73
+  },
+  {
+    "id_insumo": "F-R60-10MJ",
+    "codigo": "R60 10MJ",
+    "nome": "PARKER R60 10MJ",
+    "custo": 189.0
+  },
+  {
+    "id_insumo": "F-PSH-825",
+    "codigo": "PSH 825",
+    "nome": "TEC-FIL PSH 825",
+    "custo": 129.5
+  },
+  {
+    "id_insumo": "F-PSL-338",
+    "codigo": "PSL 338",
+    "nome": "TEC-FIL PSL 338",
+    "custo": 56.76
+  },
+  {
+    "id_insumo": "F-PSC-410",
+    "codigo": "PSC 410",
+    "nome": "TEC-FIL PSC 410",
+    "custo": 40.59
+  },
+  {
+    "id_insumo": "F-P-179343",
+    "codigo": "P 179343",
+    "nome": "DONALDSON P 179343",
+    "custo": 458.09
+  },
+  {
+    "id_insumo": "F-48077100",
+    "codigo": "48077100",
+    "nome": "CNH 48077100",
+    "custo": 860.48
+  },
+  {
+    "id_insumo": "F-PH-346",
+    "codigo": "PH 346",
+    "nome": "TEC-FIL PH 346",
+    "custo": 8.12
+  },
+  {
+    "id_insumo": "F-PSH-96-EB-101-10N",
+    "codigo": "PSH 96 / EB 101.10N",
+    "nome": "TEC-FIL PSH 96 / EB 101.10N",
+    "custo": 130.0
+  },
+  {
+    "id_insumo": "F-P-165659",
+    "codigo": "P 165659",
+    "nome": "DONALDSON P 165659",
+    "custo": 342.38
+  },
+  {
+    "id_insumo": "F-H-813-3",
+    "codigo": "H 813/3",
+    "nome": "MAN H 813/3",
+    "custo": 62.99
+  },
+  {
+    "id_insumo": "F-TH-302",
+    "codigo": "TH 302",
+    "nome": "TEC-FIL TH 302",
+    "custo": 104.15
+  },
+  {
+    "id_insumo": "F-H-76",
+    "codigo": "H 76",
+    "nome": "MAN H 76",
+    "custo": 39.0
+  },
+  {
+    "id_insumo": "F-H-601-10",
+    "codigo": "H 601/10",
+    "nome": "MAN H 601/10",
+    "custo": 9.5
+  },
+  {
+    "id_insumo": "F-W-950-12-N-O-COMPRAR",
+    "codigo": "W 950/12 / NÃO COMPRAR",
+    "nome": "MAN W 950/12 / NÃO COMPRAR",
+    "custo": 53.49
+  },
+  {
+    "id_insumo": "F-PSH-306",
+    "codigo": "PSH 306",
+    "nome": "TEC-FIL PSH 306",
+    "custo": 49.06
+  },
+  {
+    "id_insumo": "F-TH-169",
+    "codigo": "TH 169",
+    "nome": "TEC-FIL TH 169",
+    "custo": 317.83
+  },
+  {
+    "id_insumo": "F-PTH-700",
+    "codigo": "PTH 700",
+    "nome": "TEC-FIL PTH 700",
+    "custo": 186.19
+  },
+  {
+    "id_insumo": "F-86814700",
+    "codigo": "86814700",
+    "nome": "AGCO 86814700",
+    "custo": 465.74
+  },
+  {
+    "id_insumo": "F-TH-672",
+    "codigo": "TH 672",
+    "nome": "MAN TH 672",
+    "custo": 98.48
+  },
+  {
+    "id_insumo": "F-PSH-367",
+    "codigo": "PSH 367",
+    "nome": "TEC-FIL PSH 367",
+    "custo": 230.0
+  },
+  {
+    "id_insumo": "F-WP-12300",
+    "codigo": "WP 12300",
+    "nome": "MAN WP 12300",
+    "custo": 35.0
+  },
+  {
+    "id_insumo": "F-PSL-300",
+    "codigo": "PSL 300",
+    "nome": "TEC-FIL PSL 300",
+    "custo": 105.05
+  },
+  {
+    "id_insumo": "F-P-551348",
+    "codigo": "P 551348",
+    "nome": "DONALDSON P 551348",
+    "custo": 39.32
+  },
+  {
+    "id_insumo": "F-PSD-460-6",
+    "codigo": "PSD 460/6",
+    "nome": "TEC-FIL PSD 460/6",
+    "custo": 67.24
+  },
+  {
+    "id_insumo": "F-ACX-2421580",
+    "codigo": "ACX 2421580",
+    "nome": "AGCO ACX 2421580",
+    "custo": 132.83
+  },
+  {
+    "id_insumo": "F-WK-1040",
+    "codigo": "WK 1040",
+    "nome": "MAN WK 1040",
+    "custo": 50.8
+  },
+  {
+    "id_insumo": "F-PSD-515",
+    "codigo": "PSD 515",
+    "nome": "TEC-FIL PSD 515",
+    "custo": 74.49
+  },
+  {
+    "id_insumo": "F-PSD-420-6",
+    "codigo": "PSD 420/6",
+    "nome": "TEC-FIL PSD 420/6",
+    "custo": 65.56
+  },
+  {
+    "id_insumo": "F-WK-1060-1",
+    "codigo": "WK 1060/1",
+    "nome": "MAN - NÃO USAR WK 1060/1",
+    "custo": 136.38
+  },
+  {
+    "id_insumo": "F-PSD-460-1",
+    "codigo": "PSD 460/1",
+    "nome": "TEC-FIL PSD 460/1",
+    "custo": 49.8
+  },
+  {
+    "id_insumo": "F-PSD-530-1",
+    "codigo": "PSD 530/1",
+    "nome": "TEC-FIL PSD 530/1",
+    "custo": 39.4
+  },
+  {
+    "id_insumo": "F-WK-1080-7X",
+    "codigo": "WK 1080/7X",
+    "nome": "MAN WK 1080/7X",
+    "custo": 200.0
+  },
+  {
+    "id_insumo": "F-PSD-160",
+    "codigo": "PSD 160",
+    "nome": "TEC-FIL PSD 160",
+    "custo": 149.88
+  },
+  {
+    "id_insumo": "F-PSD-920-2",
+    "codigo": "PSD 920/2",
+    "nome": "TEC-FIL PSD 920/2",
+    "custo": 99.61
+  },
+  {
+    "id_insumo": "F-PSC-73-1",
+    "codigo": "PSC 73/1",
+    "nome": "TEC-FIL PSC 73/1",
+    "custo": 21.92
+  },
+  {
+    "id_insumo": "F-HDF-762",
+    "codigo": "HDF 762",
+    "nome": "DELPHI HDF 762",
+    "custo": 21.4
+  },
+  {
+    "id_insumo": "F-WK-731",
+    "codigo": "WK 731",
+    "nome": "MAN WK 731",
+    "custo": 75.06
+  },
+  {
+    "id_insumo": "F-ARS-6223",
+    "codigo": "ARS 6223",
+    "nome": "TEC-FIL ARS 6223",
+    "custo": 70.92
+  },
+  {
+    "id_insumo": "F-87344135",
+    "codigo": "87344135",
+    "nome": "NEW HOLAND 87344135",
+    "custo": 65.0
+  },
+  {
+    "id_insumo": "F-PSD-964",
+    "codigo": "PSD 964",
+    "nome": "TEC-FIL PSD 964",
+    "custo": 20.5
+  },
+  {
+    "id_insumo": "F-WK-10002-1X",
+    "codigo": "WK 10002/1X",
+    "nome": "MAN WK 10002/1X",
+    "custo": 134.16
+  },
+  {
+    "id_insumo": "F-6298164M1",
+    "codigo": "6298164M1",
+    "nome": "AGCO 6298164M1",
+    "custo": 93.05
+  },
+  {
+    "id_insumo": "F-WK-947-2",
+    "codigo": "WK 947/2",
+    "nome": "MAN WK 947/2",
+    "custo": 103.71
+  },
+  {
+    "id_insumo": "F-PSD-960",
+    "codigo": "PSD 960",
+    "nome": "TEC-FIL PSD 960",
+    "custo": 118.54
+  },
+  {
+    "id_insumo": "F-TB-1374X",
+    "codigo": "TB 1374X",
+    "nome": "MAN TB 1374X",
+    "custo": 148.58
+  },
+  {
+    "id_insumo": "F-DSF-0202",
+    "codigo": "DSF 0202",
+    "nome": "TEC-FIL DSF 0202",
+    "custo": 97.7
+  },
+  {
+    "id_insumo": "F-4358348M1",
+    "codigo": "4358348M1",
+    "nome": "AGCO 4358348M1",
+    "custo": 255.4
+  },
+  {
+    "id_insumo": "F-ACP-0552980",
+    "codigo": "ACP 0552980",
+    "nome": "AGCO ACP 0552980",
+    "custo": 465.71
+  },
+  {
+    "id_insumo": "F-PH-392",
+    "codigo": "PH 392",
+    "nome": "TECFIL PH 392",
+    "custo": 276.87
+  },
+  {
+    "id_insumo": "F-TH-371",
+    "codigo": "TH 371",
+    "nome": "TEC-FIL TH 371",
+    "custo": 199.36
+  },
+  {
+    "id_insumo": "F-PH-175-1",
+    "codigo": "PH 175/1",
+    "nome": "TEC-FIL PH 175/1",
+    "custo": 315.0
+  },
+  {
+    "id_insumo": "F-P-550787",
+    "codigo": "P 550787",
+    "nome": "DONALDSON P 550787",
+    "custo": 201.37
+  },
+  {
+    "id_insumo": "F-PSA-331",
+    "codigo": "PSA 331",
+    "nome": "TEC-FIL PSA 331",
+    "custo": 42.74
+  },
+  {
+    "id_insumo": "F-86491900",
+    "codigo": "86491900",
+    "nome": "AGCO 86491900",
+    "custo": 639.44
+  },
+  {
+    "id_insumo": "F-V-837084450",
+    "codigo": "V 837084450",
+    "nome": "AGCO V 837084450",
+    "custo": 91.656
+  },
+  {
+    "id_insumo": "F-SDLG-412003296",
+    "codigo": "SDLG - 412003296",
+    "nome": "SDLG - 412003296",
+    "custo": 1365.48
+  },
+  {
+    "id_insumo": "F-SDLG-4110000076368",
+    "codigo": "SDLG - 4110000076368",
+    "nome": "SDLG - 4110000076368",
+    "custo": 241.74
+  },
+  {
+    "id_insumo": "F-SDLG-4110003073003",
+    "codigo": "SDLG - 4110003073003",
+    "nome": "SDLG - 4110003073003",
+    "custo": 270.31
+  },
+  {
+    "id_insumo": "F-SDLG-4110001016004",
+    "codigo": "SDLG - 4110001016004",
+    "nome": "SDLG - 4110001016004",
+    "custo": 268.09
+  },
+  {
+    "id_insumo": "F-SDLG-4110002989004",
+    "codigo": "SDLG - 4110002989004",
+    "nome": "SDLG - 4110002989004",
+    "custo": 208.01
+  },
+  {
+    "id_insumo": "F-SDLG-4110001948041",
+    "codigo": "SDLG - 4110001948041",
+    "nome": "SDLG - 4110001948041",
+    "custo": 125.8
+  },
+  {
+    "id_insumo": "F-SDLG-4110002989003",
+    "codigo": "SDLG - 4110002989003",
+    "nome": "SDLG - 4110002989003",
+    "custo": 353.07
+  },
+  {
+    "id_insumo": "F-WK-10002",
+    "codigo": "WK 10002",
+    "nome": "MAN WK 10002",
+    "custo": 81.64
+  },
+  {
+    "id_insumo": "F-FB-1100",
+    "codigo": "FB 1100",
+    "nome": "FB 1100",
+    "custo": 140.0
+  },
+  {
+    "id_insumo": "F-ACP-743",
+    "codigo": "ACP 743",
+    "nome": "TEC-FIL ACP 743",
+    "custo": 121.74
+  },
+  {
+    "id_insumo": "F-FB-1101",
+    "codigo": "FB 1101",
+    "nome": "FLET GUARD FB 1101",
+    "custo": 150.0
+  },
+  {
+    "id_insumo": "F-ACP-885",
+    "codigo": "ACP 885",
+    "nome": "TEC-FIL ACP 885",
+    "custo": 17.0
+  },
+  {
+    "id_insumo": "F-ACP-687",
+    "codigo": "ACP 687",
+    "nome": "TEC-FIL ACP 687",
+    "custo": 134.08
+  },
+  {
+    "id_insumo": "F-87726699",
+    "codigo": "87726699",
+    "nome": "CNH 87726699",
+    "custo": 248.68
+  },
+  {
+    "id_insumo": "F-ACP-344-FB-010030",
+    "codigo": "ACP 344 / FB 010030",
+    "nome": "TEC-FIL ACP 344 / FB 010030",
+    "custo": 155.0
+  },
+  {
+    "id_insumo": "F-P-500194",
+    "codigo": "P 500194",
+    "nome": "DONALDSON P 500194",
+    "custo": 155.0
+  },
+  {
+    "id_insumo": "F-SDLG-29350010491",
+    "codigo": "SDLG - 29350010491",
+    "nome": "SDLG - 29350010491",
+    "custo": 165.4
+  },
+  {
+    "id_insumo": "F-ACP-215",
+    "codigo": "ACP 215",
+    "nome": "TEC-FIL ACP 215",
+    "custo": 64.61
+  },
+  {
+    "id_insumo": "F-CUD-4630",
+    "codigo": "CUD 4630",
+    "nome": "MAN CUD 4630",
+    "custo": 88.2
+  },
+  {
+    "id_insumo": "F-ACP-442",
+    "codigo": "ACP 442",
+    "nome": "TEC-FIL ACP 442",
+    "custo": 130.0
+  },
+  {
+    "id_insumo": "F-CF-700",
+    "codigo": "CF 700",
+    "nome": "MAN CF 700",
+    "custo": 42.45
+  },
+  {
+    "id_insumo": "F-AS-805",
+    "codigo": "AS 805",
+    "nome": "TEC-FIL AS 805",
+    "custo": 45.0
+  },
+  {
+    "id_insumo": "F-ACP-398",
+    "codigo": "ACP 398",
+    "nome": "MAN ACP 398",
+    "custo": 230.0
+  },
+  {
+    "id_insumo": "F-P-500195",
+    "codigo": "P 500195",
+    "nome": "DONALDSON P 500195",
+    "custo": 230.0
+  },
+  {
+    "id_insumo": "F-ACP-218",
+    "codigo": "ACP 218",
+    "nome": "TEC-FIL ACP 218",
+    "custo": 77.31
+  },
+  {
+    "id_insumo": "F-CUD-55001",
+    "codigo": "CUD 55001",
+    "nome": "MAN CUD 55001",
+    "custo": 96.0
+  },
+  {
+    "id_insumo": "F-47863571",
+    "codigo": "47863571",
+    "nome": "CNH 47863571",
+    "custo": 295.0
+  },
+  {
+    "id_insumo": "F-ASR-419",
+    "codigo": "ASR 419",
+    "nome": "TEC-FIL ASR 419",
+    "custo": 130.41
+  },
+  {
+    "id_insumo": "F-4379575M1",
+    "codigo": "4379575M1",
+    "nome": "AGCO 4379575M1",
+    "custo": 137.91
+  },
+  {
+    "id_insumo": "F-ARS-9839",
+    "codigo": "ARS 9839",
+    "nome": "TEC FIL ARS 9839",
+    "custo": 87.0
+  },
+  {
+    "id_insumo": "F-C-27830-1",
+    "codigo": "C 27830/1",
+    "nome": "MAN C 27830/1",
+    "custo": 89.9
+  },
+  {
+    "id_insumo": "F-4286473M2",
+    "codigo": "4286473M2",
+    "nome": "AGCO 4286473M2",
+    "custo": 477.56
+  },
+  {
+    "id_insumo": "F-P-608666",
+    "codigo": "P 608666",
+    "nome": "DONALDSON P 608666",
+    "custo": 355.0
+  },
+  {
+    "id_insumo": "F-ARS-7875",
+    "codigo": "ARS 7875",
+    "nome": "TEC-FIL ARS 7875",
+    "custo": 402.37
+  },
+  {
+    "id_insumo": "F-H-931202090400",
+    "codigo": "H 931202090400",
+    "nome": "AGCO H 931202090400",
+    "custo": 214.53
+  },
+  {
+    "id_insumo": "F-SDLG-29350010501",
+    "codigo": "SDLG - 29350010501",
+    "nome": "SDLG - 29350010501",
+    "custo": 254.47
+  },
+  {
+    "id_insumo": "F-ACP-973",
+    "codigo": "ACP 973",
+    "nome": "TEC-FIL ACP 973",
+    "custo": 45.0
+  },
+  {
+    "id_insumo": "F-86659200",
+    "codigo": "86659200",
+    "nome": "AGCO 86659200",
+    "custo": 477.1
+  },
+  {
+    "id_insumo": "F-11172907",
+    "codigo": "11172907",
+    "nome": "VOLVO 11172907",
+    "custo": 24.5
+  },
+  {
+    "id_insumo": "F-AP-780",
+    "codigo": "AP 780",
+    "nome": "TEC-FIL AP 780",
+    "custo": 21.18
+  },
+  {
+    "id_insumo": "F-P-575476-P-528708",
+    "codigo": "P 575476* / P 528708*",
+    "nome": "DONALDON P 575476* / P 528708*",
+    "custo": 24.5
+  },
+  {
+    "id_insumo": "F-4120003296",
+    "codigo": "4120003296",
+    "nome": "SDLG 4120003296",
+    "custo": 1091.4
+  },
+  {
+    "id_insumo": "F-SDLG-4110003073002",
+    "codigo": "SDLG - 4110003073002",
+    "nome": "SDLG - 4110003073002",
+    "custo": 391.39
+  },
+  {
+    "id_insumo": "F-C-15165-3",
+    "codigo": "C 15165/3",
+    "nome": "MAN C 15165/3",
+    "custo": 53.04
+  },
+  {
+    "id_insumo": "F-C-16400",
+    "codigo": "C 16400",
+    "nome": "MAN C 16400",
+    "custo": 49.66
+  },
+  {
+    "id_insumo": "F-ARS-8842",
+    "codigo": "ARS 8842",
+    "nome": "TEC-FIL ARS 8842",
+    "custo": 42.63
+  },
+  {
+    "id_insumo": "F-ASR-839",
+    "codigo": "ASR 839",
+    "nome": "TEC-FIL H-4 ASR 839",
+    "custo": 33.4
+  },
+  {
+    "id_insumo": "F-CF-1552",
+    "codigo": "CF 1552",
+    "nome": "MAN CF 1552",
+    "custo": 46.5
+  },
+  {
+    "id_insumo": "F-P-532500",
+    "codigo": "P 532500",
+    "nome": "DONALDSON P 532500",
+    "custo": 61.0
+  },
+  {
+    "id_insumo": "F-C-11100-4-NO-DESC",
+    "codigo": "C 11100 4 NO DESC",
+    "nome": "MAN C 11100 4 NO DESC",
+    "custo": 39.0
+  },
+  {
+    "id_insumo": "F-CF-1200",
+    "codigo": "CF 1200",
+    "nome": "MAN CF 1200",
+    "custo": 72.0
+  },
+  {
+    "id_insumo": "F-AS-830",
+    "codigo": "AS 830",
+    "nome": "TEC-FIL AS 830",
+    "custo": 68.0
+  },
+  {
+    "id_insumo": "F-AS-836",
+    "codigo": "AS 836",
+    "nome": "TEC-FIL AS 836",
+    "custo": 80.66
+  },
+  {
+    "id_insumo": "F-CF-933",
+    "codigo": "CF 933",
+    "nome": "MAN CF 933",
+    "custo": 74.67
+  },
+  {
+    "id_insumo": "F-ASR-838",
+    "codigo": "ASR 838",
+    "nome": "TEC-FIL ASR 838",
+    "custo": 52.22
+  },
+  {
+    "id_insumo": "F-CF-1600",
+    "codigo": "CF 1600",
+    "nome": "MAN CF 1600",
+    "custo": 111.59
+  },
+  {
+    "id_insumo": "F-ARS-1111",
+    "codigo": "ARS 1111",
+    "nome": "MAN ARS 1111",
+    "custo": 155.0
+  },
+  {
+    "id_insumo": "F-C-24904-2",
+    "codigo": "C 24904/2",
+    "nome": "TEC-FIL C 24904/2",
+    "custo": 290.54
+  },
+  {
+    "id_insumo": "F-P-778905",
+    "codigo": "P 778905",
+    "nome": "DONALDSON P 778905",
+    "custo": 155.0
+  },
+  {
+    "id_insumo": "F-P-780523",
+    "codigo": "P 780523",
+    "nome": "DONALDSON P 780523",
+    "custo": 79.38
+  },
+  {
+    "id_insumo": "F-ASR-875",
+    "codigo": "ASR 875",
+    "nome": "TEC-FIL ASR 875",
+    "custo": 95.29
+  },
+  {
+    "id_insumo": "F-P-780522",
+    "codigo": "P 780522",
+    "nome": "DONALDSON P 780522",
+    "custo": 115.95
+  },
+  {
+    "id_insumo": "F-ASR-889",
+    "codigo": "ASR 889",
+    "nome": "TEC-FIL ASR 889",
+    "custo": 60.0
+  },
+  {
+    "id_insumo": "F-ASR-223",
+    "codigo": "ASR 223",
+    "nome": "TEC FIL ASR 223",
+    "custo": 49.53
+  },
+  {
+    "id_insumo": "F-CF-360",
+    "codigo": "CF 360",
+    "nome": "MAN CF 360",
+    "custo": 58.89
+  },
+  {
+    "id_insumo": "F-ACP-842",
+    "codigo": "ACP 842",
+    "nome": "TEC FIL ACP 842",
+    "custo": 31.95
+  },
+  {
+    "id_insumo": "F-CF-1000",
+    "codigo": "CF 1000",
+    "nome": "MAN CF 1000",
+    "custo": 52.1
+  },
+  {
+    "id_insumo": "F-AS-820",
+    "codigo": "AS 820",
+    "nome": "TEC-FIL AS 820",
+    "custo": 50.89
+  },
+  {
+    "id_insumo": "F-CF-400-1-8-NO-DESC",
+    "codigo": "CF 400/1 8 NO DESC",
+    "nome": "MAN CF 400/1 8 NO DESC",
+    "custo": 62.5
+  },
+  {
+    "id_insumo": "F-P-537877",
+    "codigo": "P 537877",
+    "nome": "DONALDSON P 537877",
+    "custo": 120.0
+  },
+  {
+    "id_insumo": "F-ASR-176",
+    "codigo": "ASR 176",
+    "nome": "TEC-FIL ASR 176",
+    "custo": 89.0
+  },
+  {
+    "id_insumo": "F-P-778906",
+    "codigo": "P 778906",
+    "nome": "DONALDSON P 778906",
+    "custo": 261.0
+  },
+  {
+    "id_insumo": "F-C-23440-1",
+    "codigo": "C 23440/1",
+    "nome": "MAN C 23440/1",
+    "custo": 156.0
+  },
+  {
+    "id_insumo": "F-AP-4440",
+    "codigo": "AP 4440",
+    "nome": "TEC-FIL AP 4440",
+    "custo": 134.0
+  },
+  {
+    "id_insumo": "F-AP-9836",
+    "codigo": "AP 9836",
+    "nome": "TEC-FIL AP 9836",
+    "custo": 101.57
+  },
+  {
+    "id_insumo": "F-C-27844",
+    "codigo": "C 27844",
+    "nome": "MAN C 27844",
+    "custo": 120.0
+  },
+  {
+    "id_insumo": "F-C-281012",
+    "codigo": "C 281012",
+    "nome": "MAN C 281012",
+    "custo": 139.9
+  },
+  {
+    "id_insumo": "F-ARS-9841",
+    "codigo": "ARS 9841",
+    "nome": "TEC-FIL ARS 9841",
+    "custo": 134.0
+  },
+  {
+    "id_insumo": "F-AP-9496-1",
+    "codigo": "AP 9496/1",
+    "nome": "TEC-FIL AP 9496/1",
+    "custo": 192.0
+  },
+  {
+    "id_insumo": "F-C-30850-2",
+    "codigo": "C 30850/2",
+    "nome": "MAN C 30850/2",
+    "custo": 166.09
+  },
+  {
+    "id_insumo": "F-AP-9835",
+    "codigo": "AP 9835",
+    "nome": "TEC-FIL AP 9835",
+    "custo": 166.09
+  },
+  {
+    "id_insumo": "F-ASR-941",
+    "codigo": "ASR 941",
+    "nome": "TEC-FIL ASR 941",
+    "custo": 103.94
+  },
+  {
+    "id_insumo": "F-CF-1651",
+    "codigo": "CF 1651",
+    "nome": "MAN CF 1651",
+    "custo": 140.0
+  },
+  {
+    "id_insumo": "F-ARS-9840",
+    "codigo": "ARS 9840",
+    "nome": "TEC-FIL ARS 9840",
+    "custo": 164.99
+  },
+  {
+    "id_insumo": "F-ARS-9838",
+    "codigo": "ARS 9838",
+    "nome": "TEC-FIL ARS 9838",
+    "custo": 63.65
+  },
+  {
+    "id_insumo": "F-VO-11110683-COPO",
+    "codigo": "VO 11110683 COPO",
+    "nome": "VOLVO VO 11110683 COPO",
+    "custo": 155.0
+  },
+  {
+    "id_insumo": "F-P-765662",
+    "codigo": "P 765662",
+    "nome": "DONALDSON P 765662",
+    "custo": 294.36
+  },
+  {
+    "id_insumo": "F-4378102M2",
+    "codigo": "4378102M2",
+    "nome": "AGCO 4378102M2",
+    "custo": 217.04
+  },
+  {
+    "id_insumo": "F-ACP-305",
+    "codigo": "ACP 305",
+    "nome": "TEC-FIL ACP 305",
+    "custo": 14.0
+  },
+  {
+    "id_insumo": "F-ARL-4154",
+    "codigo": "ARL 4154",
+    "nome": "TEC-FIL ARL 4154",
+    "custo": 30.0
+  },
+  {
+    "id_insumo": "F-ARL-6091",
+    "codigo": "ARL 6091",
+    "nome": "TEC-FIL ARL 6091",
+    "custo": 13.0
+  },
+  {
+    "id_insumo": "F-PEC-3045-FCBR-48S",
+    "codigo": "PEC 3045 / FCBR 48S",
+    "nome": "TEC-FIL PEC 3045 / FCBR 48S",
+    "custo": 109.0
+  },
+  {
+    "id_insumo": "F-P-551807",
+    "codigo": "P 551807",
+    "nome": "DONALDSON P 551807",
+    "custo": 83.62
+  },
+  {
+    "id_insumo": "F-PSL-655",
+    "codigo": "PSL 655",
+    "nome": "TEC-FIL PSL 655",
+    "custo": 53.06
+  },
+  {
+    "id_insumo": "F-PSC-745",
+    "codigo": "PSC 745",
+    "nome": "TEC-FIL PSC 745",
+    "custo": 53.17
+  },
+  {
+    "id_insumo": "F-PSL-560",
+    "codigo": "PSL 560",
+    "nome": "TEC-FIL PSL 560",
+    "custo": 12.95
+  },
+  {
+    "id_insumo": "F-PSL-277",
+    "codigo": "PSL 277",
+    "nome": "TEC-FIL PSL 277",
+    "custo": 89.91
+  },
+  {
+    "id_insumo": "F-P-164378",
+    "codigo": "P 164378",
+    "nome": "DONALDSON P 164378",
+    "custo": 133.5
+  },
+  {
+    "id_insumo": "F-ARS-2499",
+    "codigo": "ARS 2499",
+    "nome": "TEC-FIL ARS 2499",
+    "custo": 145.0
+  },
+  {
+    "id_insumo": "F-C-18450",
+    "codigo": "C 18450",
+    "nome": "MAN C 18450",
+    "custo": 71.66
+  },
+  {
+    "id_insumo": "F-ARS-8234-FA-8280S",
+    "codigo": "ARS 8234 / FA 8280S",
+    "nome": "TEC-FIL ARS 8234 / FA 8280S",
+    "custo": 77.4
+  },
+  {
+    "id_insumo": "F-ACV-0798550",
+    "codigo": "ACV 0798550",
+    "nome": "AGCO ACV 0798550",
+    "custo": 219.26
+  }
+]

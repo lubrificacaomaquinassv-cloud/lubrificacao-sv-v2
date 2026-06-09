@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="theme-color" content="#4a9e3f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Lubrificação SV</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">SV</div>
+      <div>
+        <h1>Lubrificação de Frota</h1>
+        <p>Santa Vergínia · v2 teste</p>
+      </div>
+    </header>
+
+    <div class="status-bar" id="statusBar">
+      <span><span class="status-dot offline" id="statusDot"></span> <span id="statusText">Verificando…</span></span>
+      <span id="pendingCount"></span>
+    </div>
+
+    <form id="formLub" autocomplete="off">
+      <div class="sec">Operação</div>
+      <div class="op-btns">
+        <button type="button" class="op-btn active" data-op="preventiva">Preventiva</button>
+        <button type="button" class="op-btn" data-op="corretiva">Corretiva</button>
+      </div>
+
+      <div class="sec">Identificação</div>
+      <div class="field">
+        <label for="dataServico">Data</label>
+        <input type="date" id="dataServico" required />
+      </div>
+      <div class="field autocomplete-wrap">
+        <label for="frota">Frota / Equipamento</label>
+        <input type="text" id="frota" placeholder="Digite para buscar…" required />
+        <div class="autocomplete-list" id="frotaList"></div>
+      </div>
+      <div class="field autocomplete-wrap">
+        <label for="operador">Operador</label>
+        <input type="text" id="operador" placeholder="Digite o nome…" required />
+        <div class="autocomplete-list" id="operadorList"></div>
+      </div>
+
+      <div class="sec">Horímetro</div>
+      <div class="row-2">
+        <div class="field">
+          <label for="hAtual">Atual (h)</label>
+          <input type="number" id="hAtual" inputmode="decimal" step="1" min="0" placeholder="0" required />
+        </div>
+        <div class="field">
+          <label for="hProx">Próxima troca (h)</label>
+          <input type="number" id="hProx" inputmode="decimal" step="1" min="0" placeholder="0" required />
+        </div>
+      </div>
+
+      <div class="sec">Óleo / Lubrificante <span style="font-weight:400">(até 5)</span></div>
+      <div id="oleoContainer"></div>
+      <button type="button" class="btn-add" id="btnAddOleo">+ Adicionar óleo</button>
+
+      <div class="sec">Filtro <span style="font-weight:400">(até 5)</span></div>
+      <div id="filtroContainer"></div>
+      <button type="button" class="btn-add" id="btnAddFiltro">+ Adicionar filtro</button>
+
+      <div class="field">
+        <label for="obs">Observação <span style="text-transform:none;letter-spacing:0">(opcional)</span></label>
+        <textarea id="obs" rows="2" placeholder="Detalhe se corretiva: completar nível, quebra…"></textarea>
+      </div>
+
+      <div class="total-box">
+        <div class="label">Custo estimado (itens cadastrados)</div>
+        <div class="value" id="custoTotal">R$ 0,00</div>
+      </div>
+
+      <button type="submit" class="btn-save" id="btnSave">Registrar serviço</button>
+    </form>
+
+    <section class="recent">
+      <div class="sec">Últimos 3 serviços</div>
+      <div id="recentList"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="config.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").catch(console.warn);
+    }
+  </script>
+</body>
+</html>
