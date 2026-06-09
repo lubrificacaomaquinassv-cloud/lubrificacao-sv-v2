@@ -1,4 +1,4 @@
-const CACHE_NAME = "lub-sv-v2-3";
+const CACHE_NAME = "lub-sv-v2-5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -8,6 +8,9 @@ const ASSETS = [
   "./js/app.js",
   "./config.js",
   "./manifest.json",
+  "./icons/logo-sv.png",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png",
 ];
 
 self.addEventListener("install", (e) => {

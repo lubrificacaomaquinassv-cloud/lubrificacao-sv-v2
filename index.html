@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <meta name="theme-color" content="#4a9e3f" />
+  <meta name="theme-color" content="#1a2744" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Lubrificação SV</title>
+  <title>Lubrificação de Frota — Santa Vergínia</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/logo-sv.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
   <div class="app">
     <header class="header">
-      <div class="logo">SV</div>
+      <div class="logo">
+        <img src="icons/logo-sv.png" alt="Santa Vergínia" />
+      </div>
       <div>
         <h1>Lubrificação de Frota</h1>
-        <p>Santa Vergínia</p>
+        <p>Agropecuária e Florestal</p>
       </div>
     </header>
 
-    <div class="status-bar" id="statusBar">
-      <span><span class="status-dot offline" id="statusDot"></span> <span id="statusText">Verificando…</span></span>
-      <span id="pendingCount"></span>
+    <div class="offline-banner hidden" id="offlineBanner">
+      Sem internet no momento. Você pode lançar; enviamos quando a conexão voltar.
     </div>
 
     <form id="formLub" autocomplete="off">
@@ -38,12 +41,12 @@
       </div>
       <div class="field autocomplete-wrap">
         <label for="frota">Frota / Equipamento</label>
-        <input type="text" id="frota" placeholder="Digite para buscar…" required />
+        <input type="text" id="frota" placeholder="Número da frota" required />
         <div class="autocomplete-list" id="frotaList"></div>
       </div>
       <div class="field autocomplete-wrap">
         <label for="operador">Operador</label>
-        <input type="text" id="operador" placeholder="Digite o nome…" required />
+        <input type="text" id="operador" placeholder="Nome do operador" required />
         <div class="autocomplete-list" id="operadorList"></div>
       </div>
 
@@ -59,29 +62,24 @@
         </div>
       </div>
 
-      <div class="sec">Óleo / Lubrificante <span style="font-weight:400">(até 5)</span></div>
+      <div class="sec">Óleo / Lubrificante</div>
       <div id="oleoContainer"></div>
       <button type="button" class="btn-add" id="btnAddOleo">+ Adicionar óleo</button>
 
-      <div class="sec">Filtro <span style="font-weight:400">(até 5)</span></div>
+      <div class="sec">Filtro</div>
       <div id="filtroContainer"></div>
       <button type="button" class="btn-add" id="btnAddFiltro">+ Adicionar filtro</button>
 
       <div class="field">
-        <label for="obs">Observação <span style="text-transform:none;letter-spacing:0">(opcional)</span></label>
-        <textarea id="obs" rows="2" placeholder="Detalhe se corretiva: completar nível, quebra…"></textarea>
-      </div>
-
-      <div class="total-box">
-        <div class="label">Custo estimado (itens cadastrados)</div>
-        <div class="value" id="custoTotal">R$ 0,00</div>
+        <label for="obs">Observação</label>
+        <textarea id="obs" rows="2" placeholder="Se necessário, descreva o serviço"></textarea>
       </div>
 
       <button type="submit" class="btn-save" id="btnSave">Registrar serviço</button>
     </form>
 
     <section class="recent">
-      <div class="sec">Últimos 3 serviços</div>
+      <div class="sec">Últimos serviços</div>
       <div id="recentList"></div>
     </section>
   </div>
@@ -94,7 +92,7 @@
   <script src="js/app.js"></script>
   <script>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js").catch(console.warn);
+      navigator.serviceWorker.register("sw.js").catch(function () {});
     }
   </script>
 </body>

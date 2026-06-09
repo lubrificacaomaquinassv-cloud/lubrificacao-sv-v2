@@ -1,11 +1,11 @@
 {
-  "name": "Lubrificação SV",
-  "short_name": "Lub SV",
-  "description": "Lançamento de lubrificação — Santa Vergínia (offline)",
+  "name": "Lubrificação de Frota — Santa Vergínia",
+  "short_name": "Lubrificação",
+  "description": "Lançamento de lubrificação de frota — Santa Vergínia Agropecuária e Florestal",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0a1409",
-  "theme_color": "#4a9e3f",
+  "theme_color": "#1a2744",
   "orientation": "portrait",
   "icons": [
     {

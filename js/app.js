@@ -36,16 +36,12 @@ function toast(msg, isError = false) {
 }
 
 function setOnlineUI() {
-  const on = navigator.onLine;
-  $("statusDot").className = "status-dot " + (on ? "online" : "offline");
-  $("statusText").textContent = on ? "Online" : "Offline — lança normal, sync depois";
+  const banner = $("offlineBanner");
+  if (banner) banner.classList.toggle("hidden", navigator.onLine);
 }
 
 async function updatePendingBadge() {
-  const pending = await Storage.getPendingAll();
-  $("pendingCount").textContent = pending.length
-    ? `${pending.length} p/ sincronizar`
-    : "";
+  /* operação silenciosa — fila offline sem texto técnico na tela */
 }
 
 function filterInsumos(q, categoria) {
@@ -112,7 +108,7 @@ function createItemLine(container, categoria, lines, index) {
   wrap.className = "autocomplete-wrap";
   const inp = document.createElement("input");
   inp.type = "text";
-  inp.placeholder = "Digite o produto… (lista ajuda se tiver)";
+  inp.placeholder = "Nome do produto";
   inp.value = lines[index]?.nome || "";
   inp.dataset.role = "nome";
   const list = document.createElement("div");
@@ -188,7 +184,7 @@ function createItemLine(container, categoria, lines, index) {
       opts.forEach((item) => {
         const b = document.createElement("button");
         b.type = "button";
-        b.textContent = `${item.nome} · ${fmtR(item.valor_unitario)}/${item.unidade}`;
+        b.textContent = item.nome;
         b.addEventListener("mousedown", (e) => e.preventDefault());
         b.addEventListener("click", () => {
           pickItem(item);
@@ -229,19 +225,8 @@ function createItemLine(container, categoria, lines, index) {
   container.appendChild(block);
 }
 
-function updateLineHint(block, line) {
-  const hint = block.querySelector('[data-role="hint"]');
-  if (!line?.nome) {
-    hint.textContent = "";
-    return;
-  }
-  if (line.id_insumo && !line.pendente_cadastro) {
-    hint.textContent = `${fmtR(line.valor_unitario)}/${line.unidade} → subtotal ${fmtR(line.custo_total || 0)}`;
-    hint.style.color = "#6fcf60";
-    return;
-  }
-  hint.textContent = "Digitação livre — lança agora, custo você cadastra depois";
-  hint.style.color = "#d4a017";
+function updateLineHint() {
+  /* sem mensagens técnicas na linha do produto */
 }
 
 function collectItens() {
@@ -294,13 +279,7 @@ function collectItens() {
 }
 
 function updateTotal() {
-  const itens = collectItens();
-  const priced = itens.filter((i) => i.id_insumo && !i.pendente_cadastro);
-  const pending = itens.filter((i) => i.pendente_cadastro);
-  const total = priced.reduce((s, i) => s + (i.custo_total || 0), 0);
-  let label = fmtR(total);
-  if (pending.length) label += ` (+${pending.length} s/ preço)`;
-  $("custoTotal").textContent = label;
+  /* custo calculado internamente no envio; não exibido ao operador */
 }
 
 function renderLines() {
@@ -328,7 +307,7 @@ function removeLine(categoria, index) {
   updateTotal();
 }
 
-function renderLines() {
+function suggestProximaTroca() {
   const frotaVal = $("frota").value.trim();
   const hAtual = parseFloat($("hAtual").value);
   if (!frotaVal || isNaN(hAtual)) return;
@@ -338,22 +317,26 @@ function renderLines() {
   }
 }
 
+function labelTipo(tipo) {
+  if (tipo === "corretiva") return "Corretiva";
+  return "Preventiva";
+}
+
 async function renderRecent() {
   const list = await Storage.getRecent();
   const el = $("recentList");
   if (!list.length) {
-    el.innerHTML = '<p style="color:#8aab80;font-size:14px">Nenhum serviço registrado ainda.</p>';
+    el.innerHTML = '<p class="recent-empty">Nenhum serviço registrado ainda.</p>';
     return;
   }
   el.innerHTML = list
     .map(
       (r) => `
-    <div class="recent-item ${r.sync_status === "pending" ? "pending" : ""}">
+    <div class="recent-item">
       <div class="top">
-        <span>${r.vehicle} · ${r.tipo_servico}</span>
-        <span class="badge">${r.sync_status === "pending" ? "Pendente sync" : "OK"}</span>
+        <span>Frota ${r.vehicle} · ${labelTipo(r.tipo_servico)}</span>
       </div>
-      <div class="sub">${fmtDate(r.data_servico)} · ${r.operator || "—"} · ${fmtR(r.custo_total)}</div>
+      <div class="sub">${fmtDate(r.data_servico)} · ${r.operator || "—"}</div>
     </div>`
     )
     .join("");
@@ -361,13 +344,9 @@ async function renderRecent() {
 
 async function trySync() {
   if (!navigator.onLine) return;
-  $("statusDot").className = "status-dot syncing";
-  $("statusText").textContent = "Sincronizando…";
   try {
     await Api.loadCatalogOnline();
-    const { synced, failed } = await Api.syncPending();
-    if (synced) toast(`${synced} lançamento(s) sincronizado(s)!`);
-    if (failed) toast(`${failed} falhou — tenta de novo`, true);
+    await Api.syncPending();
   } catch (e) {
     console.warn(e);
   } finally {
@@ -388,7 +367,6 @@ async function handleSubmit(e) {
 
   const custo_total = itens.filter((i) => i.id_insumo && !i.pendente_cadastro)
     .reduce((s, i) => s + i.custo_total, 0);
-  const pendentes = itens.filter((i) => i.pendente_cadastro).length;
   const dataStr = $("dataServico").value;
   const data_servico = dataStr
     ? new Date(dataStr + "T12:00:00").toISOString()
@@ -415,13 +393,9 @@ async function handleSubmit(e) {
 
   if (navigator.onLine) {
     await trySync();
-    toast(pendentes
-      ? `Registrado! ${pendentes} item(ns) sem preço — cadastre depois`
-      : "Serviço registrado e sincronizado!");
+    toast("Serviço registrado!");
   } else {
-    toast(pendentes
-      ? `Salvo no aparelho (${pendentes} s/ preço). Sync quando tiver internet`
-      : "Salvo no aparelho — sincroniza quando houver internet");
+    toast("Salvo no aparelho.");
   }
 
   oleoLines = [null];
@@ -438,6 +412,7 @@ async function handleSubmit(e) {
 async function init() {
   const today = new Date();
   $("dataServico").value = today.toISOString().slice(0, 10);
+  setOnlineUI();
 
   document.querySelectorAll(".op-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -465,7 +440,6 @@ async function init() {
     catalog = [];
     frotas = [];
     console.warn(err);
-    toast("Sem catálogo — digite produtos manualmente", false);
   }
 
   setupAutocomplete("frota", "frotaList", filterFrotas, (o, input) => {
@@ -489,4 +463,7 @@ async function init() {
   if (navigator.onLine) trySync();
 }
 
-init();
+init().catch((err) => {
+  console.error(err);
+  setOnlineUI();
+});

@@ -41,15 +41,23 @@ body {
 }
 
 .logo {
-  width: 44px;
-  height: 44px;
-  background: var(--accent);
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 4px;
   display: grid;
   place-items: center;
-  font-weight: 700;
-  color: #0a1409;
-  font-size: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .header h1 {
@@ -66,43 +74,15 @@ body {
   text-transform: uppercase;
 }
 
-.status-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 12px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+.offline-banner {
+  padding: 10px 12px;
   margin-bottom: 14px;
-  font-size: 13px;
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.status-dot.online {
-  background: var(--accent-light);
-}
-
-.status-dot.offline {
-  background: var(--warn);
-}
-
-.status-dot.syncing {
-  background: #2980b9;
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: 0.4;
-  }
+  background: #2a2210;
+  border: 1px solid var(--warn);
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: #f0e6c8;
 }
 
 .sec {
@@ -200,9 +180,7 @@ body {
 }
 
 .item-block .price-hint {
-  font-size: 13px;
-  color: var(--accent-light);
-  margin-top: 6px;
+  display: none;
 }
 
 .btn-clear-line {
@@ -273,28 +251,6 @@ body {
   cursor: not-allowed;
 }
 
-.total-box {
-  background: var(--surface);
-  border: 1px solid var(--accent);
-  border-radius: 12px;
-  padding: 14px;
-  text-align: center;
-  margin: 16px 0;
-}
-
-.total-box .label {
-  font-size: 11px;
-  color: var(--muted);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.total-box .value {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--accent-light);
-}
-
 .btn-save {
   width: 100%;
   padding: 18px;
@@ -322,6 +278,12 @@ body {
   margin-top: 20px;
 }
 
+.recent-empty {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
 .recent-item {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -341,18 +303,6 @@ body {
   color: var(--muted);
   font-size: 12px;
   margin-top: 4px;
-}
-
-.recent-item .badge {
-  font-size: 10px;
-  padding: 2px 8px;
-  border-radius: 6px;
-  background: #1a3318;
-  color: var(--accent-light);
-}
-
-.recent-item.pending {
-  border-color: var(--warn);
 }
 
 .toast {
