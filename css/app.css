@@ -134,6 +134,23 @@ body {
   gap: 10px;
 }
 
+.row-1 {
+  grid-template-columns: 1fr;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+
+#hProx[readonly] {
+  opacity: 0.85;
+  cursor: default;
+}
+
 .op-btns {
   display: grid;
   grid-template-columns: 1fr 1fr;

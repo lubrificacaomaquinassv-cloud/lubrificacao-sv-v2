@@ -1,4 +1,5 @@
 const MAX_LINES = 5;
+const INTERVALO_PREVENTIVA_PADRAO = 300;
 let tipoServico = "preventiva";
 let catalog = [];
 let frotas = [];
@@ -307,14 +308,47 @@ function removeLine(categoria, index) {
   updateTotal();
 }
 
+function intervaloPreventiva(frotaVal) {
+  const f = frotas.find((x) => x.frota === frotaVal);
+  return f?.intervalo_horas || INTERVALO_PREVENTIVA_PADRAO;
+}
+
+function updateTipoServicoUI() {
+  const isPreventiva = tipoServico === "preventiva";
+  const hProxWrap = $("hProxWrap");
+  const hProx = $("hProx");
+  const hAtualLabel = $("hAtualLabel");
+  const horimetroRow = $("horimetroRow");
+
+  if (hAtualLabel) {
+    hAtualLabel.textContent = isPreventiva ? "Horímetro na troca (h)" : "Horímetro do evento (h)";
+  }
+  if (hProxWrap) hProxWrap.classList.toggle("hidden", !isPreventiva);
+  if (horimetroRow) horimetroRow.classList.toggle("row-1", !isPreventiva);
+
+  if (hProx) {
+    hProx.required = false;
+    if (!isPreventiva) hProx.value = "";
+  }
+
+  if (isPreventiva) suggestProximaTroca();
+
+  const hint = $("hProxHint");
+  if (hint) {
+    hint.textContent = isPreventiva
+      ? `Calculada automaticamente (+${intervaloPreventiva($("frota").value.trim())}h)`
+      : "";
+  }
+}
+
 function suggestProximaTroca() {
+  if (tipoServico !== "preventiva") return;
+
   const frotaVal = $("frota").value.trim();
   const hAtual = parseFloat($("hAtual").value);
   if (!frotaVal || isNaN(hAtual)) return;
-  const f = frotas.find((x) => x.frota === frotaVal);
-  if (f?.intervalo_horas && !$("hProx").value) {
-    $("hProx").value = Math.round(hAtual + f.intervalo_horas);
-  }
+
+  $("hProx").value = Math.round(hAtual + intervaloPreventiva(frotaVal));
 }
 
 function labelTipo(tipo) {
@@ -365,6 +399,27 @@ async function handleSubmit(e) {
     return;
   }
 
+  const hAtual = parseFloat($("hAtual").value);
+  if (isNaN(hAtual) || hAtual < 0) {
+    toast(
+      tipoServico === "preventiva"
+        ? "Informe o horímetro na troca"
+        : "Informe o horímetro do evento",
+      true
+    );
+    return;
+  }
+
+  let hProx = null;
+  if (tipoServico === "preventiva") {
+    suggestProximaTroca();
+    hProx = parseFloat($("hProx").value);
+    if (isNaN(hProx) || hProx <= hAtual) {
+      toast("Próxima troca inválida — verifique o horímetro na troca", true);
+      return;
+    }
+  }
+
   const custo_total = itens.filter((i) => i.id_insumo && !i.pendente_cadastro)
     .reduce((s, i) => s + i.custo_total, 0);
   const dataStr = $("dataServico").value;
@@ -378,8 +433,8 @@ async function handleSubmit(e) {
     vehicle: $("frota").value.trim(),
     operator: $("operador").value.trim().toUpperCase(),
     tipo_servico: tipoServico,
-    hourmeter_atual: parseFloat($("hAtual").value) || null,
-    hourmeter_prox: parseFloat($("hProx").value) || null,
+    hourmeter_atual: hAtual,
+    hourmeter_prox: hProx,
     data_servico,
     observation: $("obs").value.trim(),
     itens,
@@ -419,6 +474,7 @@ async function init() {
       document.querySelectorAll(".op-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       tipoServico = btn.dataset.op;
+      updateTipoServicoUI();
     });
   });
 
@@ -426,6 +482,7 @@ async function init() {
   $("btnAddFiltro").addEventListener("click", () => addLine("FILTRO"));
   $("formLub").addEventListener("submit", handleSubmit);
 
+  $("hAtual").addEventListener("input", suggestProximaTroca);
   $("hAtual").addEventListener("blur", suggestProximaTroca);
   $("frota").addEventListener("blur", suggestProximaTroca);
 
@@ -457,6 +514,7 @@ async function init() {
 
   oleoLines = [null];
   renderLines();
+  updateTipoServicoUI();
   setOnlineUI();
   await updatePendingBadge();
   await renderRecent();

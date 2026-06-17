@@ -60,7 +60,7 @@ async function loadCatalogOnline() {
   const frotas = equip.map((e) => ({
     frota: String(e.frota),
     modelo: e.modelo || "",
-    intervalo_horas: parseFloat(e.intervalo_horas) || 250,
+    intervalo_horas: parseFloat(e.intervalo_horas) || 300,
   }));
 
   await Storage.saveCatalog("insumos", catalog);
@@ -137,15 +137,17 @@ async function syncOne(record) {
   }
 
   try {
-    await sbPost(
-      "ultima_troca_lubri",
-      {
-        frota: record.vehicle,
-        horimetro_ultima_troca: record.hourmeter_atual,
-        data_ultima_troca: record.data_servico.split("T")[0],
-      },
-      "return=minimal,resolution=merge-duplicates"
-    );
+    if (record.tipo_servico === "preventiva" && record.hourmeter_atual != null) {
+      await sbPost(
+        "ultima_troca_lubri",
+        {
+          frota: record.vehicle,
+          horimetro_ultima_troca: record.hourmeter_atual,
+          data_ultima_troca: record.data_servico.split("T")[0],
+        },
+        "return=minimal,resolution=merge-duplicates"
+      );
+    }
   } catch (e) {
     console.warn("ultima_troca_lubri:", e);
   }

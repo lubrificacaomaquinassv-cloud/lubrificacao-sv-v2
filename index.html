@@ -51,14 +51,15 @@
       </div>
 
       <div class="sec">Horímetro</div>
-      <div class="row-2">
+      <div class="row-2" id="horimetroRow">
         <div class="field">
-          <label for="hAtual">Atual (h)</label>
+          <label for="hAtual" id="hAtualLabel">Horímetro na troca (h)</label>
           <input type="number" id="hAtual" inputmode="decimal" step="1" min="0" placeholder="0" required />
         </div>
-        <div class="field">
+        <div class="field" id="hProxWrap">
           <label for="hProx">Próxima troca (h)</label>
-          <input type="number" id="hProx" inputmode="decimal" step="1" min="0" placeholder="0" required />
+          <input type="number" id="hProx" inputmode="decimal" step="1" min="0" placeholder="Auto +300h" readonly tabindex="-1" />
+          <small class="field-hint" id="hProxHint">Calculada automaticamente (+300h)</small>
         </div>
       </div>
 
